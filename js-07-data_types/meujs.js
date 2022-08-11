@@ -1,0 +1,8 @@
+console.log(typeof("Tipos de dados"))
+console.log(typeof(true))
+console.log(10 > 0)
+console.log(!!{})
+console.log(undefined)
+console.log(null)
+console.log(undefined==null)
+console.log(Number.MAX_SAFE_INTEGER)
