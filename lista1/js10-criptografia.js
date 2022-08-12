@@ -3,6 +3,7 @@ let msg = "abacateZ";
 let lista_msg = msg.split("")
 let lista_msg_cript = [];
 let mensagem_cript = [];
+const KEY = 1
 
 // // Criptografar
 
@@ -13,7 +14,7 @@ for (var i in lista_msg){
     else if (lista_msg[i] == "Z"){
         lista_msg[i] = "$";
     }
-    lista_msg_cript[i] = 1 + lista_msg[i].charCodeAt();
+    lista_msg_cript[i] = KEY + lista_msg[i].charCodeAt();
 }
  
 for (var indice in lista_msg_cript){
