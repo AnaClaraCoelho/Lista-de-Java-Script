@@ -8,33 +8,27 @@
  * 
  */
 
-// Considerando o primeiro dia de utilização do programa como o primeiro dia de trabalho de um ciclo....
+let date = new Date()
+let folgaDaquiQuantosDias = 2
+let cont = 0
+let mes = {0:"janeiro", 1: "fevereiro", 2:"março", 3:"abril", 4:"maio", 5:"junho",
+6:"julho", 7:"agosto", 8:"setembro", 9:"outubro", 10:"novembro", 11:"dezembro" }
+let algumDia = new Date(date)
 
-let cont = 0;
-let i = 0;
-let mes = {1:"janeiro", 2: "fevereiro", 3:"março", 4:"abril", 5:"maio", 6:"junho",
-7:"julho", 8:"agosto", 9:"setembro", 10:"outubro", 11:"novembro", 12:"dezembro" }
-let seleciona_mes = 1
-let cont_meses = 1
-let contador = 0
 
-while(cont_meses != 4){
-    for (i=1; i < 31; i++){
-        cont = i;
-        if (i == 30){
-            seleciona_mes += 1;
+for (i=0; i< 89; i++){
+    if (i ==0){
+        for (j=0; j<folgaDaquiQuantosDias; j++){
+            algumDia.setDate(algumDia.getDate()+1)
+            console.log(`No dia ${algumDia.getDate()} de ${mes[algumDia.getMonth()]} você estará trabalhando`)
         }
-        if (contador == 6){
-            contador = -1
-            for (i = cont; i< cont + 2; i++){
-                console.log(`No dia ${i} de ${mes[seleciona_mes]} Erick estará de folga`)
-            }
-            i --
-        }
-        else {
-            console.log(`No dia ${i} de ${mes[seleciona_mes]} Erick estará trabalhando`)
-        }
-        contador += 1
     }
-    cont_meses += 1
-}
+    else if((i - folgaDaquiQuantosDias) % 8 == 0 || (i - folgaDaquiQuantosDias-1) % 8 == 0){
+        algumDia.setDate(algumDia.getDate()+1)
+        console.log(`No dia ${algumDia.getDate()} de ${mes[algumDia.getMonth()]} você estará de folga`)
+    }
+    else{
+        algumDia.setDate(algumDia.getDate()+1)
+        console.log(`No dia ${algumDia.getDate()} de ${mes[algumDia.getMonth()]} você estará trabalhando`)
+    }
+    }
