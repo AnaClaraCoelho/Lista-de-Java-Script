@@ -21,9 +21,9 @@ for (var i in lista + 1){
         seg_maior = maior
         maior = lista[i]
     }
-    if (lista[i] > seg_maior && lista[i] < maior){
-        seg_maior = lista[i]
-    }
+    // if (lista[i] > seg_maior && lista[i] < maior){
+    //     seg_maior = lista[i]
+    // }
 }
 console.log(`O maior é ${maior}`)
 // lista.splice(indice, 1)
