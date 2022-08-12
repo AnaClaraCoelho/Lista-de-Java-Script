@@ -11,7 +11,7 @@ for (var i in lista_msg){
         lista_msg[i] = "@";
     }
     else if (lista_msg[i] == "Z"){
-        lista_msg[i] = "&";
+        lista_msg[i] = "$";
     }
     lista_msg_cript[i] = 1 + lista_msg[i].charCodeAt();
 }

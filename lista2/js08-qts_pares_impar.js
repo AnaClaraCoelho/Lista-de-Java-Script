@@ -1,3 +1,12 @@
+/**
+ * Percorra a entrada com uma lista de nros e retorne qtos numeros impares/pares
+ * 
+ * ENTRADA:
+ * [1,2,3,4,5,6,7]
+ * 
+ * SAIDA
+ * 4 3
+ */
 let lista = [1, 10, 56, 30, 72, 33, 6, 13];
 let pares = 0;
 let impares = 0;

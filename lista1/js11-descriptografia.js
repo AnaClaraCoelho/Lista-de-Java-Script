@@ -1,5 +1,5 @@
 // Descriptografar
-let mensagem_cript = "bcbdbuf'";
+let mensagem_cript = "bcbdbuf%";
 let lista_msg_cript = mensagem_cript.split("")
 let lista_msg = [];
 let msg = [];
@@ -13,7 +13,7 @@ for (var indice in lista_msg_cript){
     if (msg[indice] == "@"){
         msg[indice] = "z";
     }
-    else if (msg[indice] == "&"){
+    else if (msg[indice] == "$"){
         msg[indice] = "Z";
     }
 }
