@@ -16,7 +16,7 @@
 let maior = 0
 let seg_maior = 0
 
-for (var i in lista + 1){
+for (var i in lista){
     if (lista[i] > maior){
         seg_maior = maior
         maior = lista[i]
