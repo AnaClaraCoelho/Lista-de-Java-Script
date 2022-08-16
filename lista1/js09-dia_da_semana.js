@@ -1,29 +1,30 @@
 /** Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.),
  *  se digitar outro valor deve aparecer valor inválido.  */
-let dia = 9;
+let dia = 2;
+let dias = ["Domingo    ", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Dia inválido"]
 switch (dia){
     case 1:
-        dia = "Domingo";
+        dia = dias[0];
         break;
     case 2:
-        dia = "Segunda";
+        dia = dias[1];
         break;
     case 3:
-        dia = "Terça";
+        dia = dias[2];
         break;
     case 4:
-        dia = "Quarta";
+        dia = dias[3];
         break;
     case 5:
-        dia = "Quinta";
+        dia = dias[4];
         break;
     case 6:
-        dia = "Sexta";
+        dia = dias[5];
         break;
     case 7:
-        dia = "Sábado";
+        dia = dias[6];
         break;
     default:
-        dia = "Inválido"
+        dia = dias[7];
 }
 console.log(dia);

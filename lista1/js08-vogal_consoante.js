@@ -1,7 +1,7 @@
 /**  Faça um Programa que verifique se uma letra digitada é vogal ou consoante.  */
-let letra1= "c";
+let letra1= "a";
 let vogais = ["a","e","i","o","u"];
-if (vogais.includes(letra1)) {
+if (vogais.includes(letra1.toLowerCase())) {
     console.log("É uma vogal!");
 }
 else {
